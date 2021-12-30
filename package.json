@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec npx babel-node src/index.js",
-    "build": "Babel src -d dist && ncp src/views dist/views && ncp src/public dist/public"
+    "dev": "nodemon --exec npx babel-node src/index.js",
+    "build": "Babel src -d dist && ncp src/views dist/views && ncp src/public dist/public",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "pr4zka",
