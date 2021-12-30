@@ -1,8 +1,11 @@
 {
   "name": "programa-notas",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "a realy coll app",
   "main": "index.js",
+  "engines": {
+   "node": "14.x"
+  },
   "scripts": {
     "dev": "nodemon --exec npx babel-node src/index.js",
     "build": "Babel src -d dist && ncp src/views dist/views && ncp src/public dist/public",
