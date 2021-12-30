@@ -1,0 +1,34 @@
+{
+  "name": "programa-notas",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec npx babel-node src/index.js",
+    "build": "Babel src -d dist && ncp src/views dist/views && ncp src/public dist/public"
+  },
+  "keywords": [],
+  "author": "pr4zka",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/plugin-transform-regenerator": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
